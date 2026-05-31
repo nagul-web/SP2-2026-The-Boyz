@@ -3,7 +3,7 @@
 **College Name:** Sona College of Technology  
 **Team Name:** The Boyz  
 
-### 🔗 Team Members
+###  Team Members
 * **Aswin M** - Year 3, Computer Science and Design (CSD)
 * **Nagulan V** - Year 3, Computer Science and Design (CSD)
 * **Navaneethan A R** - Year 3, Computer Science and Design (CSD)
@@ -22,7 +22,7 @@ The following Python libraries are utilized for data manipulation and mathematic
 
 ---
 
-### 🧠 Model Architecture & Methodology
+###  Model Architecture & Methodology
 
 * **GradientBoostingRegressor:** Core prediction engine utilizes an assembly line of 150 decision trees (`n_estimators=150`, `max_depth=5`). Tree models are exceptionally powerful at learning complex, non-linear relationships in tabular data (like pitch conditions combined with player strike rates).
   
