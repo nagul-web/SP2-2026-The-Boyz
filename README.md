@@ -26,7 +26,7 @@ The following Python libraries are utilized for data manipulation and mathematic
 
 * **GradientBoostingRegressor:** Core prediction engine utilizes an assembly line of 150 decision trees (`n_estimators=150`, `max_depth=5`). Tree models are exceptionally powerful at learning complex, non-linear relationships in tabular data (like pitch conditions combined with player strike rates).
   
-* **Exponential Time-Decay Weighting:** Standard tree models often fail in modern IPL predictions because they average all historical data, resulting in predictions that are far too low for today's explosive game. We solved this by injecting a mathematical time-decay factor (`decay_factor = 4.0`) directly into the training weights. This forces the algorithm to give ~100% learning priority to recent matches and nearly 0% to older eras, naturally shifting the model's baseline to modern 65+ run scores without using hardcoded cheats.
+* **Exponential Time-Decay Weighting:** Standard tree models often fail in modern IPL predictions because they average all historical data, resulting in predictions that are far too low for today's explosive game. Solved this by injecting a mathematical time-decay factor (`decay_factor = 4.0`) directly into the training weights. This forces the algorithm to give ~100% learning priority to recent matches and nearly 0% to older eras, naturally shifting the model's baseline to modern 65+ run scores without using hardcoded cheats.
   
 * **Autonomous NLP Cleaning (IoU):** To ensure a crash-proof pipeline during live data ingestion, we built a custom Intersection-over-Union (IoU) text processing algorithm. It instantly detects and groups misspelled stadium or team names dynamically on the fly, preventing data fragmentation.
   
